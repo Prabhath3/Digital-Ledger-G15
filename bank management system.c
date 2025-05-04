@@ -5,6 +5,13 @@ int i,j;
 int main_exit;
 void menu();
 void close();
+void printCentered(char *text, int width) {
+    int pad = (width - strlen(text)) / 2; // Calculate padding
+    for (int i = 0; i < pad; i++) {
+        printf(" ");
+    }
+    printf("%s\n", text);
+}
 struct date{
     int month,day,year;
 
@@ -529,9 +536,14 @@ void menu(void)
 }
 int main()
 {
+    printCentered("*-----****----                         ----****----*",130);
+    printCentered("Digital Ledger Bank               \n",145);
+    printCentered("*------****------                 -----****------*",130);
+    printCentered("Welcome to Digital Ledger Bank.",48);
+
     char pass[10],A_password[10]="root";
     int i=0;
-    printf("\n\n\t\tEnter the password to login:");
+    printf("\n\n\tEnter the password to login:");
     scanf("%s",pass);
     /*do
     {
