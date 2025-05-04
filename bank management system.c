@@ -529,7 +529,7 @@ void menu(void)
 }
 int main()
 {
-    char pass[10],A_password[10]="prabha";
+    char pass[10],A_password[10]="root";
     int i=0;
     printf("\n\n\t\tEnter the password to login:");
     scanf("%s",pass);
