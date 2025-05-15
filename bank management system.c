@@ -568,7 +568,7 @@ int main()
         {printf("\n\nPassword Match!\nLOADING");
         for(i=0;i<=6;i++)
         {
-            fordelay(100000000);
+            fordelay(10000000);
             printf(".");
         }
                 system("cls");
