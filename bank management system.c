@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
-#include <mysql.h>
 int i,j;
-MYSQL *conn;
 int main_exit;
 void menu();
 void close();
@@ -538,13 +536,21 @@ void menu(void)
 }
 int main()
 {
+    printf("\n\n");
+    printf("\33[1;34m DDDDDDD  IIIIII  GGGGGGGG   IIIIII  TTTTTT    AA      LL              LL          EEEEEE  DDDDDDDD    GGGGGGGG   EEEEEE  RRRRRR\n\033[0m");
+    printf("\33[1;34mD       DD   II   GG           II      TT     A  A     LL              LL          EE      D      DD   GG         EE      R    R\n\033[0m");
+    printf("\33[1;34mD       DD   II   GG           II      TT    AA  AA    LL              LL          EEEEEE  D       DD  GG         EEEEEE  R    R\n\033[0m");
+    printf("\33[1;34mD       DD   II   GG   GGGGG   II      TT   AAAAAAAA   LL              LL          EEEEEE  D       DD  GG   GGGGG EEEEEE  RRRR\n\033[0m");
+    printf("\33[1;34mD       DD   II   GG     GG    II      TT  AA      AA  LL              LL          EE      D      DD   GG     GG  EE      R    R\n\033[0m");
+    printf("\33[1;34mDDDDDDDD  IIIIII  GGGGGGGG   IIIIII    TT AA        AA LLLLLLLLL       LLLLLLLLL   EEEEEE  DDDDDDDD    GGGGGGGG   EEEEEE  R    R\n\033[0m");
+
     printCentered("*-----****----                         ----****----*",130);
     printCentered("Digital Ledger Bank               \n",145);
     printCentered("*------****------                 -----****------*",130);
     printCentered("Welcome to Digital Ledger Bank.",48);
 
 
-    char pass[10],A_password[10]="root";
+    char pass[10],A_password[10]="digital";
     int i=0;
     printf("\n\n\tEnter the password to login:");
     scanf("%s",pass);
