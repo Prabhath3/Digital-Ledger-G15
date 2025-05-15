@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
+#include <mysql.h>
 int i,j;
+MYSQL *conn;
 int main_exit;
 void menu();
 void close();
@@ -540,6 +542,7 @@ int main()
     printCentered("Digital Ledger Bank               \n",145);
     printCentered("*------****------                 -----****------*",130);
     printCentered("Welcome to Digital Ledger Bank.",48);
+
 
     char pass[10],A_password[10]="root";
     int i=0;
