@@ -537,17 +537,19 @@ void menu(void)
 int main()
 {
     printf("\n\n");
-    printf("\33[1;34m DDDDDDD  IIIIII  GGGGGGGG   IIIIII  TTTTTT    AA      LL              LL          EEEEEE  DDDDDDDD    GGGGGGGG   EEEEEE  RRRRRR\n\033[0m");
-    printf("\33[1;34mD       DD   II   GG           II      TT     A  A     LL              LL          EE      D      DD   GG         EE      R    R\n\033[0m");
-    printf("\33[1;34mD       DD   II   GG           II      TT    AA  AA    LL              LL          EEEEEE  D       DD  GG         EEEEEE  R    R\n\033[0m");
-    printf("\33[1;34mD       DD   II   GG   GGGGG   II      TT   AAAAAAAA   LL              LL          EEEEEE  D       DD  GG   GGGGG EEEEEE  RRRR\n\033[0m");
-    printf("\33[1;34mD       DD   II   GG     GG    II      TT  AA      AA  LL              LL          EE      D      DD   GG     GG  EE      R    R\n\033[0m");
-    printf("\33[1;34mDDDDDDDD  IIIIII  GGGGGGGG   IIIIII    TT AA        AA LLLLLLLLL       LLLLLLLLL   EEEEEE  DDDDDDDD    GGGGGGGG   EEEEEE  R    R\n\033[0m");
+    printf("\33[1;34m   ********    ******   ********   ******  ******      **       **               **         ********  ********      ********   ********  ******\n\033[0m");
+    printf("\33[1;34m   *       **    **    **            **      **       ****      **               **         *         *       **   **          **        *     **\n\033[0m");
+    printf("\33[1;34m   *       **    **    **            **      **      **  **     **               **         ********  *        **  **          ********  *     **\n\033[0m");
+    printf("\33[1;34m   *       **    **    **   *****    **      **     ********    **               **         ********  *        **  **    ****  ********  ****** \n\033[0m");
+    printf("\33[1;34m   *       **    **    **     ***    **      **    **      **   **               **         *         *       **   **     ***  **        *     **\n\033[0m");
+    printf("\33[1;34m   ********    ******   ******* *  ******    **   **        **  *********        *********  ********  ********      ******* *  ********  *     **\n\033[0m");
+    printf("\n\n");
 
-    printCentered("*-----****----                         ----****----*",130);
-    printCentered("Digital Ledger Bank               \n",145);
-    printCentered("*------****------                 -----****------*",130);
-    printCentered("Welcome to Digital Ledger Bank.",48);
+    printCentered("*------------********------------*",150);
+    printCentered("Digital Ledger Bank               ",166);
+    printCentered("*------------********------------*",150);
+    printf("\n\n");
+    printCentered("Welcome to Digital Ledger Bank !!!",50);
 
 
     char pass[10],A_password[10]="digital";
